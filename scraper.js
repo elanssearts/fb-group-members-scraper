@@ -59,9 +59,7 @@ const Scrap = setInterval(() => {
                 name,
                 thumbnail
             }
-            if (femaleRegExp.test(name)) {
                 payload.push(member);
-            }
         });
         let data = {
             "Name": "Group Members",
