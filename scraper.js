@@ -68,4 +68,4 @@ const Scrap = setInterval(() => {
         console.log(data)
         clearTimeout(Scrap);
     }
-}, 3000);
+}, 5000);
