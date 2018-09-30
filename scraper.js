@@ -1,6 +1,20 @@
 //scraper
 const Scrap = setInterval(() => {
     const load = document.querySelectorAll('a.uiMorePagerPrimary');
+    /**
+    
+    If You are not member of group change
+    
+        load.forEach(e => {
+            e.click()
+        });
+    
+    TO:
+    
+        load[2].click();
+
+    */
+    
     if (load.length > 0) {
         window.scrollTo(0, document.body.scrollHeight);
         load.forEach(e => {
@@ -29,3 +43,5 @@ const Scrap = setInterval(() => {
         clearTimeout(Scrap);
     }
 }, 5000);
+
+
